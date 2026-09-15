@@ -6,7 +6,7 @@ Browse 252 applications, start from a ready-made profile, or save your own selec
 
 **Version 2.6** · Windows x64 · PowerShell + WPF
 
-[Download FirstInstall.exe](https://github.com/braga1k/First-Install-Script/raw/refs/heads/main/bin/FirstInstall.exe) · [Supported apps](docs/SUPPORTED-APPS.md) · [Profiles](docs/PROFILES.md) · [Report an issue](https://github.com/braga1k/First-Install-Script/issues)
+[Download FirstInstall.exe](https://github.com/braga1k/First-Install/raw/refs/heads/main/bin/FirstInstall.exe) · [Supported apps](docs/SUPPORTED-APPS.md) · [Profiles](docs/PROFILES.md) · [Report an issue](https://github.com/braga1k/First-Install/issues)
 
 ![First Install showing its application library and Windows accent color](docs/images/first-install.png)
 
@@ -24,7 +24,7 @@ The catalog prioritizes open-source options where practical and also includes po
 
 ## Get started
 
-1. [Download the executable](https://github.com/braga1k/First-Install-Script/raw/refs/heads/main/bin/FirstInstall.exe) and open **FirstInstall.exe**.
+1. [Download the executable](https://github.com/braga1k/First-Install/raw/refs/heads/main/bin/FirstInstall.exe) and open **FirstInstall.exe**.
 2. Select applications, or choose a setup from **All profiles**.
 3. Adjust the selection in **Your setup**.
 4. Choose **Review & install**, review the plan and accept the terms.
@@ -133,7 +133,7 @@ docs/                 Catalog, profiles, coverage and screenshot
 
 To propose an application, include its official website, WinGet package ID if available, license, and category. Catalog entries must use an exact package ID or an official guided-install URL. Update relevant profiles and run the checks before submitting a change.
 
-For bug reports, include your Windows version, First Install version, steps to reproduce and the relevant log excerpt. Suggestions and pull requests are welcome through [GitHub issues](https://github.com/braga1k/First-Install-Script/issues) and pull requests.
+For bug reports, include your Windows version, First Install version, steps to reproduce and the relevant log excerpt. Suggestions and pull requests are welcome through [GitHub issues](https://github.com/braga1k/First-Install/issues) and pull requests.
 
 ## Credits and licensing
 
