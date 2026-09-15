@@ -7,8 +7,8 @@ using System.Windows.Forms;
 [assembly: AssemblyTitle("First Install")]
 [assembly: AssemblyDescription("First Install - Windows app installer")]
 [assembly: AssemblyProduct("First Install")]
-[assembly: AssemblyVersion("2.6.0.0")]
-[assembly: AssemblyFileVersion("2.6.0.0")]
+[assembly: AssemblyVersion("2.7.0.0")]
+[assembly: AssemblyFileVersion("2.7.0.0")]
 
 internal static class Launcher
 {

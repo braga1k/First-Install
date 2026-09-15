@@ -48,7 +48,7 @@ if ($SelfTest) {
     }
     if ((@(Get-Plan @($profilesByKey['audio'].Apps))).Key -notcontains 'apo') { throw 'Audio profile is missing APO.' }
     foreach ($key in $profilesByKey['opensource'].Apps) { if ($byKey[$key].OpenSource -ne $true) { throw 'Open-source profile includes an unverified license.' } }
-    if ($catalog.Count -ne 252 -or $byKey.Count -ne $catalog.Count) { throw 'Invalid catalog.' }
+    if ($catalog.Count -ne 253 -or $byKey.Count -ne $catalog.Count) { throw 'Invalid catalog.' }
     $packageIds=@($catalog | ForEach-Object { $_.Ids })
     if (@($packageIds | Select-Object -Unique).Count -ne $packageIds.Count) { throw 'Duplicate package IDs.' }
     foreach ($app in $catalog) {
@@ -141,7 +141,7 @@ try {
     $iconStream.Dispose()
     $window.Height=[Math]::Min(840,[Windows.SystemParameters]::WorkArea.Height-24)
     $ui = @{}
-    foreach ($name in @('Categories','Search','ClearSearch','ResultCount','UserProfiles','ClearSelection','Cards','Empty','LogBox','SelectedCount','Import','Export','QueuePanel','Status','Progress','Install','Cancel','OpenLogs','Environment','MinimizeWindow','MaximizeWindow','CloseWindow','MaximizeGlyph','LibraryScroll')) { $ui[$name] = $window.FindName($name) }
+    foreach ($name in @('Categories','Search','ClearSearch','ResultCount','UserProfiles','ClearSelection','Cards','Empty','LogBox','SelectedCount','SaveSetup','Import','Export','QueuePanel','Status','Progress','Install','Cancel','OpenLogs','Environment','MinimizeWindow','MaximizeWindow','CloseWindow','MaximizeGlyph','LibraryScroll')) { $ui[$name] = $window.FindName($name) }
     $ui.Profiles=$window.FindName('Profiles')
     $ui.MinimizeWindow.Add_Click({ $window.WindowState='Minimized' })
     $ui.MaximizeWindow.Add_Click({
@@ -186,6 +186,8 @@ try {
         $script:syncing = $false
         $ui.SelectedCount.Text = '{0} apps selected' -f $selected.Count
         $ui.Install.IsEnabled = ($selected.Count -gt 0 -and -not $busy)
+        $ui.SaveSetup.IsEnabled=($selected.Count -gt 0 -and -not $busy)
+        $script:removeButtons=@{}
         $ui.QueuePanel.Children.Clear()
         if ($selected.Count -eq 0) {
             $label = New-Label 'Your next setup starts here. Select apps from the library.' '#8793A2'
@@ -194,12 +196,38 @@ try {
         foreach ($app in @(Get-Plan @($catalog | Where-Object { $selected.ContainsKey($_.Key) } | ForEach-Object { $_.Key }))) {
             $panel = New-Object Windows.Controls.StackPanel; $panel.Margin = '0,8,0,9'
             $title = New-Label $app.Name; $title.FontWeight = 'SemiBold'
-            $panel.Children.Add($title) | Out-Null
+            $row=New-Object Windows.Controls.Grid
+            $row.ColumnDefinitions.Add((New-Object Windows.Controls.ColumnDefinition))
+            $actionColumn=New-Object Windows.Controls.ColumnDefinition; $actionColumn.Width='Auto'
+            $row.ColumnDefinitions.Add($actionColumn)
+            $title.Margin='0,0,8,0'; $title.VerticalAlignment='Center'
+            $row.Children.Add($title) | Out-Null
+            $remove=New-Object Windows.Controls.Button
+            $remove.Content='×'; $remove.Tag=$app.Key; $remove.Width=32; $remove.MinHeight=32
+            $remove.Padding='0'; $remove.Margin='0'; $remove.FontSize=18
+            $remove.Background='Transparent'; $remove.BorderThickness='0'
+            $remove.ToolTip='Remove '+$app.Name+' from your setup'
+            [Windows.Automation.AutomationProperties]::SetName($remove,'Remove '+$app.Name)
+            $remove.IsEnabled=-not $busy
+            [Windows.Controls.Grid]::SetColumn($remove,1)
+            $remove.Add_Click({ param($sender,$eventArgs) Remove-SelectedApp ([string]$sender.Tag) })
+            $script:removeButtons[$app.Key]=$remove
+            $row.Children.Add($remove) | Out-Null
+            $panel.Children.Add($row) | Out-Null
             $text = if ($statuses.ContainsKey($app.Key)) { $statuses[$app.Key] } elseif ($app.Ids.Count) { 'Automatic · WinGet' } else { 'Guided · official website' }
             $label = New-Label $text '#A0AAB7' 12; $label.Margin = '0,4,0,0'
             $panel.Children.Add($label) | Out-Null
             $ui.QueuePanel.Children.Add($panel) | Out-Null
         }
+    }
+    function Remove-SelectedApp([string]$Key) {
+        if ($script:busy) { return }
+        $selected.Remove($Key); $statuses.Remove($Key)
+        foreach ($item in $catalog) {
+            if ($item.Requires -contains $Key) { $selected.Remove($item.Key); $statuses.Remove($item.Key) }
+        }
+        Update-Selection
+        $ui.Status.Text='Selection updated. Review before installing.'
     }
     function Set-Selection([string[]]$Keys) {
         $selected.Clear(); $statuses.Clear()
@@ -343,7 +371,7 @@ try {
         $ui.Status.Text='User profile loaded. Review your apps before installing.'
     }
     $ui.OpenLogs.Add_Click({ Start-Process explorer.exe -ArgumentList ('"{0}"' -f $logDir) })
-    $ui.Export.Add_Click({
+    $saveProfileAction={
         $dialog = New-Object Microsoft.Win32.SaveFileDialog
         $dialog.Filter = 'First Install profile (*.json)|*.json'; $dialog.FileName = 'my-setup.json'
         if ($dialog.ShowDialog($window)) {
@@ -352,7 +380,9 @@ try {
                 Add-Log 'Profile saved.'
             } catch { [Windows.MessageBox]::Show($window,$_.Exception.Message,'Could not save profile') | Out-Null }
         }
-    })
+    }
+    $ui.Export.Add_Click($saveProfileAction)
+    $ui.SaveSetup.Add_Click($saveProfileAction)
     $ui.Import.Add_Click({
         $dialog = New-Object Microsoft.Win32.OpenFileDialog; $dialog.Filter = 'First Install profile (*.json)|*.json'
         if ($dialog.ShowDialog($window)) {
@@ -560,6 +590,18 @@ try {
         }
         Update-WindowsAccent
         if ($ui.Install.Background.Color -ne (Get-WindowsAccent)) { throw 'Windows accent mismatch.' }
+        Set-Selection @('affinity','peace','extra_vlc')
+        $ui.Search.Text='LocalSend'
+        $script:removeButtons['affinity'].RaiseEvent([Windows.RoutedEventArgs]::new([Windows.Controls.Primitives.ButtonBase]::ClickEvent))
+        if ($selected.ContainsKey('affinity') -or $checks['affinity'].IsChecked -or $ui.Search.Text -ne 'LocalSend') { throw 'Setup removal did not preserve the filtered view.' }
+        $script:removeButtons['apo'].RaiseEvent([Windows.RoutedEventArgs]::new([Windows.Controls.Primitives.ButtonBase]::ClickEvent))
+        if ($selected.ContainsKey('peace') -or $selected.ContainsKey('apo') -or $selected.Count -ne 1) { throw 'Setup removal left a broken dependency.' }
+        Set-Busy $true
+        if ($ui.SaveSetup.IsEnabled -or $script:removeButtons['extra_vlc'].IsEnabled) { throw 'Setup actions enabled while installing.' }
+        Set-Busy $false
+        Set-Selection @()
+        if ($ui.SaveSetup.IsEnabled) { throw 'Empty setup can be saved.' }
+        $ui.Search.Text=''
         $testProfile=Join-Path ([IO.Path]::GetTempPath()) ([Guid]::NewGuid().ToString()+'.json')
         try {
             Set-Selection @('peace','ts3')
@@ -730,7 +772,7 @@ try {
             $ui.CloseWindow.RaiseEvent([Windows.RoutedEventArgs]::new([Windows.Controls.Primitives.ButtonBase]::ClickEvent))
         })
         $window.ShowDialog() | Out-Null
-        'PASS: 252 apps, packed category/search grids, preserved selection, Windows accent updates and contrast, user profile save/load and invalid-file rejection, 8 profiles, themed profile menu, grid widths, 48-DIP thumb, scrolling to the last app and window controls.'
+        'PASS: 253 apps, packed category/search grids, preserved selection, setup remove buttons and save availability, Windows accent updates and contrast, user profile save/load and invalid-file rejection, 8 profiles, themed profile menu, grid widths, 48-DIP thumb, scrolling to the last app and window controls.'
         return
     }
     $timer.Start()

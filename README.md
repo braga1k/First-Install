@@ -2,18 +2,24 @@
 
 **Your PC. Your way.** A Windows desktop app for choosing and installing the software you need after a fresh Windows setup.
 
-Browse 252 applications, start from a ready-made profile, or save your own selection. Review everything before installation begins.
+Browse 253 applications, start from a ready-made profile, or save your own selection. Review everything before installation begins.
 
-**Version 2.6** · Windows x64 · PowerShell + WPF
+**Version 2.7** · Windows x64 · PowerShell + WPF
 
 [Download FirstInstall.exe](https://github.com/braga1k/First-Install/raw/refs/heads/main/bin/FirstInstall.exe) · [Supported apps](docs/SUPPORTED-APPS.md) · [Profiles](docs/PROFILES.md) · [Report an issue](https://github.com/braga1k/First-Install/issues)
 
 ![First Install showing its application library and Windows accent color](docs/images/first-install.png)
 
+## New in 2.7
+
+- **Affinity** added to Design & Photography, with guided installation through its official website.
+- **Save selection...** directly in Your setup to save a portable profile for later.
+- **×** buttons beside selected apps, keeping the library search and category in place. Removing a required dependency also removes the apps that depend on it. Selection editing is disabled while installations run.
+
 ## What it does
 
 - **Browse and search:** filter by category or name in a responsive grid that keeps your selection when the view changes.
-- **Install through WinGet:** 233 catalog entries use automatic installation; 19 guided entries open official download pages.
+- **Install through WinGet:** 233 catalog entries use automatic installation; 20 guided entries open official download pages.
 - **Choose a profile:** eight curated setups cover everyday use, gaming, development, creative work and more.
 - **Save your own setup:** export your selection to a portable JSON profile and load it again on another PC.
 - **Follow your Windows accent:** buttons, selections and scroll handles update to match Windows while the app is open.
@@ -26,7 +32,7 @@ The catalog prioritizes open-source options where practical and also includes po
 
 1. [Download the executable](https://github.com/braga1k/First-Install/raw/refs/heads/main/bin/FirstInstall.exe) and open **FirstInstall.exe**.
 2. Select applications, or choose a setup from **All profiles**.
-3. Adjust the selection in **Your setup**.
+3. Adjust the selection in **Your setup**. Use **×** beside an app to remove it, or **Save selection...** to keep the setup for later.
 4. Choose **Review & install**, review the plan and accept the terms.
 5. Start the queue. Complete any guided installations on the official websites that open.
 
@@ -34,7 +40,7 @@ The executable contains the app's script, interface and catalog. You do not need
 
 ### Requirements
 
-- Windows 10 or Windows 11, **64-bit**. Version 2.6 was tested on Windows 11 24H2.
+- Windows 10 or Windows 11, **64-bit**. Version 2.7 was tested on Windows 11 24H2.
 - Windows PowerShell 5.1, WPF and .NET Framework 4.x.
 - WinGet, provided by Windows App Installer, for automatic installations.
 - An internet connection to download applications. Individual installers may request administrator access.
@@ -61,7 +67,7 @@ Applying a profile **replaces the current selection**. It does not start install
 ### Create your own profile
 
 1. Select the applications you want.
-2. Open **User profiles → Save current selection...** and choose a filename.
+2. Click **Save selection...** in **Your setup** and choose a filename. The same action is also available under **User profiles → Save current selection...**.
 3. Later, use **User profiles → Load saved profile...** to restore that selection.
 
 Profiles are portable JSON files. They store catalog keys, not installer commands. Empty selections cannot be saved, and invalid files leave the existing selection intact. A profile created by a newer catalog may contain keys that an older app version cannot recognize.
@@ -100,7 +106,7 @@ powershell.exe -NoProfile -STA -ExecutionPolicy Bypass -File .\tests\smoke.ps1
 
 The executable also accepts `--self-test` and `--smoke-test`; these write their results beside the executable. The tests validate catalog consistency, dependency handling, profile save/load, category and search layout, scrolling, Windows accent updates, contrast and window controls. UI tests briefly open windows and do not install third-party applications.
 
-The bundled 2.6 executable passed both checks on Windows 11. Actual installation of every catalog entry has not been tested. High-contrast mode and large text scaling still need broader validation.
+The bundled 2.7 executable passed both checks on Windows 11. Actual installation of every catalog entry has not been tested. High-contrast mode and large text scaling still need broader validation.
 
 ## Troubleshooting
 

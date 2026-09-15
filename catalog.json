@@ -201,6 +201,24 @@
     "Verification": "WinGet manifest"
   },
   {
+    "Key": "affinity",
+    "Name": "Affinity",
+    "Category": "Design & Photography",
+    "Description": "Photo editing, vector design and page layout. Download through the official website.",
+    "Ids": [],
+    "Url": "https://www.affinity.studio/get-affinity",
+    "Requires": [],
+    "Icon": "",
+    "OpenSource": false,
+    "LicenseLabel": "Proprietary",
+    "GitHubStars": null,
+    "StarsCheckedOn": null,
+    "Website": "https://www.affinity.studio/",
+    "CatalogSource": "Official website",
+    "VerifiedOn": "2026-09-15",
+    "Verification": "Official website"
+  },
+  {
     "Key": "winutil_aimp",
     "Name": "AIMP (Music Player)",
     "Category": "Audio & Video",

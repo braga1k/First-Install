@@ -1,6 +1,6 @@
-# Supported apps — First Install 2.6
+# Supported apps — First Install 2.7
 
-252 apps. 233 WinUtil entries are represented; some entries share the retained Visual C++ runtime bundle. IDs for existing profiles are unchanged.
+253 apps. 233 WinUtil entries are represented; some entries share the retained Visual C++ runtime bundle. IDs for existing profiles are unchanged.
 
 | Application | Category | Method | Package ID / download |
 |---|---|---|---|
@@ -512,7 +512,7 @@ Snapshot checked: 2026-09-15. Missing entries: 0. Snapshot SHA-256: `ca8c6eb4156
 | Battle.net | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Blizzard/BattleNet/1.19.3.3219/Blizzard.BattleNet.locale.en-US.yaml) |
 | Bruno | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Bruno/Bruno/4.1.0/Bruno.Bruno.locale.en-US.yaml) |
 | BlurAutoClicker | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Blur009/BlurAutoClicker/3.9.6/Blur009.BlurAutoClicker.locale.en-US.yaml) |
-| Cemu | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/Cemu/Cemu/2.6/Cemu.Cemu.locale.en-US.yaml) |
+| Cemu | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/Cemu/Cemu/2.7/Cemu.Cemu.locale.en-US.yaml) |
 | ChatGPT Desktop | Official Microsoft Store listing | [Source](https://apps.microsoft.com/detail/9NT1R1C2HH7J) |
 | Chatterino | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/ChatterinoTeam/Chatterino/2.5.5/ChatterinoTeam.Chatterino.locale.en-US.yaml) |
 | Chrome | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Google/Chrome/153.0.8010.37/Google.Chrome.locale.en-US.yaml) |
@@ -533,7 +533,7 @@ Snapshot checked: 2026-09-15. Missing entries: 0. Snapshot SHA-256: `ca8c6eb4156
 | .NET Desktop Runtime 9 | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/DotNet/DesktopRuntime/9/9.0.20/Microsoft.DotNet.DesktopRuntime.9.locale.en-US.yaml) |
 | .NET Desktop Runtime 10 | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/DotNet/DesktopRuntime/10/10.0.12/Microsoft.DotNet.DesktopRuntime.10.locale.en-US.yaml) |
 | Dropbox | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/Dropbox/Dropbox/262.4.3183/Dropbox.Dropbox.locale.en-US.yaml) |
-| EA App | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/ElectronicArts/EADesktop/13.788.2.6298/ElectronicArts.EADesktop.locale.en-US.yaml) |
+| EA App | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/ElectronicArts/EADesktop/13.788.2.7298/ElectronicArts.EADesktop.locale.en-US.yaml) |
 | Edge | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Edge/153.0.4234.32/Microsoft.Edge.locale.en-US.yaml) |
 | EmulationStation Desktop Edition | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/ES-DE/EmulationStation-DE/3.4.1/ES-DE.EmulationStation-DE.locale.en-US.yaml) |
 | Epic Games Launcher | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/EpicGames/EpicGamesLauncher/1.3.193.0/EpicGames.EpicGamesLauncher.locale.en-US.yaml) |
@@ -549,7 +549,7 @@ Snapshot checked: 2026-09-15. Missing entries: 0. Snapshot SHA-256: `ca8c6eb4156
 | Go | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GoLang/Go/1.27.0/GoLang.Go.locale.en-US.yaml) |
 | Google Drive | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Google/GoogleDrive/130.0.2.0/Google.GoogleDrive.locale.en-US.yaml) |
 | GPU-Z | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/TechPowerUp/GPU-Z/2.70.0/TechPowerUp.GPU-Z.locale.en-US.yaml) |
-| gsudo | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/gerardog/gsudo/2.6.1/gerardog.gsudo.locale.en-US.yaml) |
+| gsudo | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/gerardog/gsudo/2.7.1/gerardog.gsudo.locale.en-US.yaml) |
 | Hugo | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/h/Hugo/Hugo/Extended/0.166.0/Hugo.Hugo.Extended.locale.en-US.yaml) |
 | HWiNFO | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/REALiX/HWiNFO/8.50/REALiX.HWiNFO.locale.en-US.yaml) |
 | HWMonitor | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/CPUID/HWMonitor/1.68/CPUID.HWMonitor.locale.en-US.yaml) |
@@ -653,3 +653,9 @@ Snapshot checked: 2026-09-15. Missing entries: 0. Snapshot SHA-256: `ca8c6eb4156
 | Ruby | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/RubyInstallerTeam/Ruby/4/0/4.0.6-1/RubyInstallerTeam.Ruby.4.0.locale.en-US.yaml) |
 | Lua | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/rjpcomputing/luaforwindows/5.1.5.52/rjpcomputing.luaforwindows.locale.en-US.yaml) |
 | Cloudflare WARP | WinGet manifest | [Source](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/Cloudflare/Warp/26.7.1376.0/Cloudflare.Warp.locale.en-US.yaml) |
+
+## Added in 2.7
+
+| Application | Category | Installation | License |
+| --- | --- | --- | --- |
+| [Affinity](https://www.affinity.studio/get-affinity) | Design & Photography | Guided · official website | Proprietary |

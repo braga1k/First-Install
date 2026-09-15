@@ -1,7 +1,7 @@
 {
   "UpstreamCount": 233,
   "Added": 152,
-  "Total": 252,
+  "Total": 253,
   "CheckedOn": "2026-09-15",
   "SnapshotSHA256": "ca8c6eb4156e8159b6c2cbea23a5208b1382b6989fdf5923e9aff4580813a0e1",
   "Missing": [],
@@ -122,8 +122,8 @@
       "WinUtilKey": "cemu",
       "WinUtilId": "Cemu.Cemu",
       "Verification": "WinGet manifest",
-      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/Cemu/Cemu/2.6/Cemu.Cemu.locale.en-US.yaml",
-      "VerifiedVersion": "2.6",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/Cemu/Cemu/2.7/Cemu.Cemu.locale.en-US.yaml",
+      "VerifiedVersion": "2.7",
       "License": "MPL-2.0"
     },
     {
@@ -332,8 +332,8 @@
       "WinUtilKey": "eaapp",
       "WinUtilId": "ElectronicArts.EADesktop",
       "Verification": "WinGet manifest",
-      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/ElectronicArts/EADesktop/13.788.2.6298/ElectronicArts.EADesktop.locale.en-US.yaml",
-      "VerifiedVersion": "13.788.2.6298",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/ElectronicArts/EADesktop/13.788.2.7298/ElectronicArts.EADesktop.locale.en-US.yaml",
+      "VerifiedVersion": "13.788.2.7298",
       "License": "Proprietary"
     },
     {
@@ -492,8 +492,8 @@
       "WinUtilKey": "gsudo",
       "WinUtilId": "gerardog.gsudo",
       "Verification": "WinGet manifest",
-      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/gerardog/gsudo/2.6.1/gerardog.gsudo.locale.en-US.yaml",
-      "VerifiedVersion": "2.6.1",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/gerardog/gsudo/2.7.1/gerardog.gsudo.locale.en-US.yaml",
+      "VerifiedVersion": "2.7.1",
       "License": "MIT"
     },
     {
