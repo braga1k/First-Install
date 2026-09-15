@@ -1,0 +1,5 @@
+/dist/
+/test-logs/
+*.log
+__pycache__/
+*.pyc

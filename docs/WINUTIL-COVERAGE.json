@@ -1,0 +1,1530 @@
+{
+  "UpstreamCount": 233,
+  "Added": 152,
+  "Total": 252,
+  "CheckedOn": "2026-09-15",
+  "SnapshotSHA256": "ca8c6eb4156e8159b6c2cbea23a5208b1382b6989fdf5923e9aff4580813a0e1",
+  "Missing": [],
+  "Entries": [
+    {
+      "Key": "winutil_1password",
+      "Name": "1Password",
+      "WinUtilKey": "1password",
+      "WinUtilId": "AgileBits.1Password",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/AgileBits/1Password/8.12.36.40/AgileBits.1Password.locale.en-US.yaml",
+      "VerifiedVersion": "8.12.36.40",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_adobe",
+      "Name": "Adobe Acrobat Reader",
+      "WinUtilKey": "adobe",
+      "WinUtilId": "Adobe.Acrobat.Reader.64-bit",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Adobe/Acrobat/Reader/64-bit/26.002.21901/Adobe.Acrobat.Reader.64-bit.locale.en-US.yaml",
+      "VerifiedVersion": "26.002.21901",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_advancedip",
+      "Name": "Advanced IP Scanner",
+      "WinUtilKey": "advancedip",
+      "WinUtilId": "Famatech.AdvancedIPScanner",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/f/Famatech/AdvancedIPScanner/2.5.4594.1/Famatech.AdvancedIPScanner.locale.en-US.yaml",
+      "VerifiedVersion": "2.5.4594.1",
+      "License": "Freeware"
+    },
+    {
+      "Key": "winutil_aimp",
+      "Name": "AIMP (Music Player)",
+      "WinUtilKey": "aimp",
+      "WinUtilId": "AIMP.AIMP",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/AIMP/AIMP/5.10.2418/AIMP.AIMP.locale.en-US.yaml",
+      "VerifiedVersion": "5.10.2418",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_angryipscanner",
+      "Name": "Angry IP Scanner",
+      "WinUtilKey": "angryipscanner",
+      "WinUtilId": "angryziber.AngryIPScanner",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/angryziber/AngryIPScanner/3.10.0/angryziber.AngryIPScanner.locale.en-US.yaml",
+      "VerifiedVersion": "3.10.0",
+      "License": "GPL-2.0"
+    },
+    {
+      "Key": "winutil_anydesk",
+      "Name": "AnyDesk",
+      "WinUtilKey": "anydesk",
+      "WinUtilId": "AnyDesk.AnyDesk",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/AnyDesk/AnyDesk/9.7.15/AnyDesk.AnyDesk.locale.en-US.yaml",
+      "VerifiedVersion": "9.7.15",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_autoruns",
+      "Name": "Autoruns",
+      "WinUtilKey": "autoruns",
+      "WinUtilId": "Microsoft.Sysinternals.Autoruns",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Sysinternals/Autoruns/14.3/Microsoft.Sysinternals.Autoruns.locale.en-US.yaml",
+      "VerifiedVersion": "14.3",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_rdcman",
+      "Name": "RDCMan",
+      "WinUtilKey": "rdcman",
+      "WinUtilId": "Microsoft.Sysinternals.RDCMan",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Sysinternals/RDCMan/3.12/Microsoft.Sysinternals.RDCMan.locale.en-US.yaml",
+      "VerifiedVersion": "3.12",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_battlenet",
+      "Name": "Battle.net",
+      "WinUtilKey": "battlenet",
+      "WinUtilId": "Blizzard.BattleNet",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Blizzard/BattleNet/1.19.3.3219/Blizzard.BattleNet.locale.en-US.yaml",
+      "VerifiedVersion": "1.19.3.3219",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_bruno",
+      "Name": "Bruno",
+      "WinUtilKey": "bruno",
+      "WinUtilId": "Bruno.Bruno",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Bruno/Bruno/4.1.0/Bruno.Bruno.locale.en-US.yaml",
+      "VerifiedVersion": "4.1.0",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_blurautoclicker",
+      "Name": "BlurAutoClicker",
+      "WinUtilKey": "blurautoclicker",
+      "WinUtilId": "Blur009.BlurAutoClicker",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Blur009/BlurAutoClicker/3.9.6/Blur009.BlurAutoClicker.locale.en-US.yaml",
+      "VerifiedVersion": "3.9.6",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_cemu",
+      "Name": "Cemu",
+      "WinUtilKey": "cemu",
+      "WinUtilId": "Cemu.Cemu",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/Cemu/Cemu/2.6/Cemu.Cemu.locale.en-US.yaml",
+      "VerifiedVersion": "2.6",
+      "License": "MPL-2.0"
+    },
+    {
+      "Key": "winutil_chatgpt",
+      "Name": "ChatGPT Desktop",
+      "WinUtilKey": "chatgpt",
+      "WinUtilId": "msstore:9NT1R1C2HH7J",
+      "Verification": "Official Microsoft Store listing",
+      "ManifestUrl": "https://apps.microsoft.com/detail/9NT1R1C2HH7J",
+      "VerifiedVersion": "Store",
+      "License": "See publisher terms"
+    },
+    {
+      "Key": "winutil_chatterino",
+      "Name": "Chatterino",
+      "WinUtilKey": "chatterino",
+      "WinUtilId": "ChatterinoTeam.Chatterino",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/ChatterinoTeam/Chatterino/2.5.5/ChatterinoTeam.Chatterino.locale.en-US.yaml",
+      "VerifiedVersion": "2.5.5",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_chrome",
+      "Name": "Chrome",
+      "WinUtilKey": "chrome",
+      "WinUtilId": "Google.Chrome",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Google/Chrome/153.0.8010.37/Google.Chrome.locale.en-US.yaml",
+      "VerifiedVersion": "153.0.8010.37",
+      "License": "Freeware"
+    },
+    {
+      "Key": "winutil_chromium",
+      "Name": "Chromium",
+      "WinUtilKey": "chromium",
+      "WinUtilId": "Hibbiki.Chromium",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/h/Hibbiki/Chromium/153.0.8010.37/Hibbiki.Chromium.locale.en-US.yaml",
+      "VerifiedVersion": "153.0.8010.37",
+      "License": "BSD 3-Clause License"
+    },
+    {
+      "Key": "winutil_cinebenchr23",
+      "Name": "Cinebench R23",
+      "WinUtilKey": "cinebenchr23",
+      "WinUtilId": "Maxon.CinebenchR23",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Maxon/CinebenchR23/23.200/Maxon.CinebenchR23.locale.en-US.yaml",
+      "VerifiedVersion": "23.200",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_claude",
+      "Name": "Claude Desktop",
+      "WinUtilKey": "claude",
+      "WinUtilId": "Anthropic.Claude",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Anthropic/Claude/1.44121.2/Anthropic.Claude.locale.en-US.yaml",
+      "VerifiedVersion": "1.44121.2",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_claude-code",
+      "Name": "Claude Code",
+      "WinUtilKey": "claude-code",
+      "WinUtilId": "Anthropic.ClaudeCode",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Anthropic/ClaudeCode/2.1.268/Anthropic.ClaudeCode.locale.en-US.yaml",
+      "VerifiedVersion": "2.1.268",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_codex",
+      "Name": "Codex",
+      "WinUtilKey": "codex",
+      "WinUtilId": "OpenAI.Codex",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/OpenAI/Codex/0.152.0/OpenAI.Codex.locale.en-US.yaml",
+      "VerifiedVersion": "0.152.0",
+      "License": "Apache-2.0"
+    },
+    {
+      "Key": "winutil_cpuz",
+      "Name": "CPU-Z",
+      "WinUtilKey": "cpuz",
+      "WinUtilId": "CPUID.CPU-Z",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/CPUID/CPU-Z/3.01/CPUID.CPU-Z.locale.en-US.yaml",
+      "VerifiedVersion": "3.01",
+      "License": "Freeware"
+    },
+    {
+      "Key": "winutil_cursor",
+      "Name": "Cursor",
+      "WinUtilKey": "cursor",
+      "WinUtilId": "Anysphere.Cursor",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Anysphere/Cursor/3.19.7/Anysphere.Cursor.locale.en-US.yaml",
+      "VerifiedVersion": "3.19.7",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_ddu",
+      "Name": "Display Driver Uninstaller",
+      "WinUtilKey": "ddu",
+      "WinUtilId": "Wagnardsoft.DisplayDriverUninstaller",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/w/Wagnardsoft/DisplayDriverUninstaller/18.1.5.3/Wagnardsoft.DisplayDriverUninstaller.locale.en-US.yaml",
+      "VerifiedVersion": "18.1.5.3",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_dismtools",
+      "Name": "DISMTools",
+      "WinUtilKey": "dismtools",
+      "WinUtilId": "CodingWondersSoftware.DISMTools.Stable",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/CodingWondersSoftware/DISMTools/Stable/0.8.1.26083/CodingWondersSoftware.DISMTools.Stable.locale.en-US.yaml",
+      "VerifiedVersion": "0.8.1.26083",
+      "License": "GPLv3"
+    },
+    {
+      "Key": "winutil_ntlite",
+      "Name": "NTLite",
+      "WinUtilKey": "ntlite",
+      "WinUtilId": "Nlitesoft.NTLite",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/n/Nlitesoft/NTLite/2026.08.11723/Nlitesoft.NTLite.locale.en-US.yaml",
+      "VerifiedVersion": "2026.08.11723",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_dorion",
+      "Name": "Dorion",
+      "WinUtilKey": "dorion",
+      "WinUtilId": "SpikeHD.Dorion",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/SpikeHD/Dorion/6.13.1/SpikeHD.Dorion.locale.en-US.yaml",
+      "VerifiedVersion": "6.13.1",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_dockerdesktop",
+      "Name": "Docker Desktop",
+      "WinUtilKey": "dockerdesktop",
+      "WinUtilId": "Docker.DockerDesktop",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/Docker/DockerDesktop/4.91.0/Docker.DockerDesktop.locale.en-US.yaml",
+      "VerifiedVersion": "4.91.0",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_dotnet6",
+      "Name": ".NET Desktop Runtime 6",
+      "WinUtilKey": "dotnet6",
+      "WinUtilId": "Microsoft.DotNet.DesktopRuntime.6",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/DotNet/DesktopRuntime/6/6.0.36/Microsoft.DotNet.DesktopRuntime.6.locale.en-US.yaml",
+      "VerifiedVersion": "6.0.36",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_dotnet8",
+      "Name": ".NET Desktop Runtime 8",
+      "WinUtilKey": "dotnet8",
+      "WinUtilId": "Microsoft.DotNet.DesktopRuntime.8",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/DotNet/DesktopRuntime/8/8.0.31/Microsoft.DotNet.DesktopRuntime.8.locale.en-US.yaml",
+      "VerifiedVersion": "8.0.31",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_dotnet9",
+      "Name": ".NET Desktop Runtime 9",
+      "WinUtilKey": "dotnet9",
+      "WinUtilId": "Microsoft.DotNet.DesktopRuntime.9",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/DotNet/DesktopRuntime/9/9.0.20/Microsoft.DotNet.DesktopRuntime.9.locale.en-US.yaml",
+      "VerifiedVersion": "9.0.20",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_dotnet10",
+      "Name": ".NET Desktop Runtime 10",
+      "WinUtilKey": "dotnet10",
+      "WinUtilId": "Microsoft.DotNet.DesktopRuntime.10",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/DotNet/DesktopRuntime/10/10.0.12/Microsoft.DotNet.DesktopRuntime.10.locale.en-US.yaml",
+      "VerifiedVersion": "10.0.12",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_dropbox",
+      "Name": "Dropbox",
+      "WinUtilKey": "dropbox",
+      "WinUtilId": "Dropbox.Dropbox",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/Dropbox/Dropbox/262.4.3183/Dropbox.Dropbox.locale.en-US.yaml",
+      "VerifiedVersion": "262.4.3183",
+      "License": "Combined GPLv2 and proprietary software"
+    },
+    {
+      "Key": "winutil_eaapp",
+      "Name": "EA App",
+      "WinUtilKey": "eaapp",
+      "WinUtilId": "ElectronicArts.EADesktop",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/ElectronicArts/EADesktop/13.788.2.6298/ElectronicArts.EADesktop.locale.en-US.yaml",
+      "VerifiedVersion": "13.788.2.6298",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_edge",
+      "Name": "Edge",
+      "WinUtilKey": "edge",
+      "WinUtilId": "Microsoft.Edge",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Edge/153.0.4234.32/Microsoft.Edge.locale.en-US.yaml",
+      "VerifiedVersion": "153.0.4234.32",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_es-de",
+      "Name": "EmulationStation Desktop Edition",
+      "WinUtilKey": "es-de",
+      "WinUtilId": "ES-DE.EmulationStation-DE",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/ES-DE/EmulationStation-DE/3.4.1/ES-DE.EmulationStation-DE.locale.en-US.yaml",
+      "VerifiedVersion": "3.4.1",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_epicgames",
+      "Name": "Epic Games Launcher",
+      "WinUtilKey": "epicgames",
+      "WinUtilId": "EpicGames.EpicGamesLauncher",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/EpicGames/EpicGamesLauncher/1.3.193.0/EpicGames.EpicGamesLauncher.locale.en-US.yaml",
+      "VerifiedVersion": "1.3.193.0",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_files",
+      "Name": "Files",
+      "WinUtilKey": "files",
+      "WinUtilId": "FilesCommunity.Files",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/f/FilesCommunity/Files/4.2.9.0/FilesCommunity.Files.locale.en-US.yaml",
+      "VerifiedVersion": "4.2.9.0",
+      "License": "MPL"
+    },
+    {
+      "Key": "winutil_firefoxesr",
+      "Name": "Firefox ESR",
+      "WinUtilKey": "firefoxesr",
+      "WinUtilId": "Mozilla.Firefox.ESR",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Mozilla/Firefox/ESR/153.2.0/Mozilla.Firefox.ESR.locale.en-US.yaml",
+      "VerifiedVersion": "153.2.0",
+      "License": "MPL-2.0"
+    },
+    {
+      "Key": "winutil_floorp",
+      "Name": "Floorp",
+      "WinUtilKey": "floorp",
+      "WinUtilId": "Ablaze.Floorp",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Ablaze/Floorp/12.16.4@153.0/Ablaze.Floorp.locale.en-US.yaml",
+      "VerifiedVersion": "12.16.4@153.0",
+      "License": "Mozilla Public License Version 2.0"
+    },
+    {
+      "Key": "winutil_flux",
+      "Name": "F.lux",
+      "WinUtilKey": "flux",
+      "WinUtilId": "flux.flux",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/f/flux/flux/4.141/flux.flux.locale.en-US.yaml",
+      "VerifiedVersion": "4.141",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_fnm",
+      "Name": "Fast Node Manager",
+      "WinUtilKey": "fnm",
+      "WinUtilId": "Schniz.fnm",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/Schniz/fnm/1.39.0/Schniz.fnm.locale.en-US.yaml",
+      "VerifiedVersion": "1.39.0",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_foxpdfreader",
+      "Name": "Foxit PDF Reader",
+      "WinUtilKey": "foxpdfreader",
+      "WinUtilId": "Foxit.FoxitReader",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/f/Foxit/FoxitReader/2026.2.0.39747/Foxit.FoxitReader.locale.en-US.yaml",
+      "VerifiedVersion": "2026.2.0.39747",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_geforcenow",
+      "Name": "GeForce NOW",
+      "WinUtilKey": "geforcenow",
+      "WinUtilId": "Nvidia.GeForceNow",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/n/Nvidia/GeForceNow/2.0.88.129/Nvidia.GeForceNow.locale.en-US.yaml",
+      "VerifiedVersion": "2.0.88.129",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_gitextensions",
+      "Name": "Git Extensions",
+      "WinUtilKey": "gitextensions",
+      "WinUtilId": "GitExtensionsTeam.GitExtensions",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GitExtensionsTeam/GitExtensions/7.2.1.7/GitExtensionsTeam.GitExtensions.locale.en-US.yaml",
+      "VerifiedVersion": "7.2.1.7",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_gog",
+      "Name": "GOG Galaxy",
+      "WinUtilKey": "gog",
+      "WinUtilId": "GOG.Galaxy",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GOG/Galaxy/2.1.8.30/GOG.Galaxy.locale.en-US.yaml",
+      "VerifiedVersion": "2.1.8.30",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_golang",
+      "Name": "Go",
+      "WinUtilKey": "golang",
+      "WinUtilId": "GoLang.Go",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GoLang/Go/1.27.0/GoLang.Go.locale.en-US.yaml",
+      "VerifiedVersion": "1.27.0",
+      "License": "BSD-3-Clause"
+    },
+    {
+      "Key": "winutil_googledrive",
+      "Name": "Google Drive",
+      "WinUtilKey": "googledrive",
+      "WinUtilId": "Google.GoogleDrive",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Google/GoogleDrive/130.0.2.0/Google.GoogleDrive.locale.en-US.yaml",
+      "VerifiedVersion": "130.0.2.0",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_gpuz",
+      "Name": "GPU-Z",
+      "WinUtilKey": "gpuz",
+      "WinUtilId": "TechPowerUp.GPU-Z",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/TechPowerUp/GPU-Z/2.70.0/TechPowerUp.GPU-Z.locale.en-US.yaml",
+      "VerifiedVersion": "2.70.0",
+      "License": "Freeware"
+    },
+    {
+      "Key": "winutil_gsudo",
+      "Name": "gsudo",
+      "WinUtilKey": "gsudo",
+      "WinUtilId": "gerardog.gsudo",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/gerardog/gsudo/2.6.1/gerardog.gsudo.locale.en-US.yaml",
+      "VerifiedVersion": "2.6.1",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_hugo",
+      "Name": "Hugo",
+      "WinUtilKey": "hugo",
+      "WinUtilId": "Hugo.Hugo.Extended",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/h/Hugo/Hugo/Extended/0.166.0/Hugo.Hugo.Extended.locale.en-US.yaml",
+      "VerifiedVersion": "0.166.0",
+      "License": "Apache-2.0"
+    },
+    {
+      "Key": "winutil_hwinfo",
+      "Name": "HWiNFO",
+      "WinUtilKey": "hwinfo",
+      "WinUtilId": "REALiX.HWiNFO",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/REALiX/HWiNFO/8.50/REALiX.HWiNFO.locale.en-US.yaml",
+      "VerifiedVersion": "8.50",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_hwmonitor",
+      "Name": "HWMonitor",
+      "WinUtilKey": "hwmonitor",
+      "WinUtilId": "CPUID.HWMonitor",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/CPUID/HWMonitor/1.68/CPUID.HWMonitor.locale.en-US.yaml",
+      "VerifiedVersion": "1.68",
+      "License": "Freeware"
+    },
+    {
+      "Key": "winutil_internetdownloadmanager",
+      "Name": "Internet Download Manager",
+      "WinUtilKey": "internetdownloadmanager",
+      "WinUtilId": "Tonec.InternetDownloadManager",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/Tonec/InternetDownloadManager/6.43.10/Tonec.InternetDownloadManager.locale.en-US.yaml",
+      "VerifiedVersion": "6.43.10",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_irfanview",
+      "Name": "IrfanView",
+      "WinUtilKey": "irfanview",
+      "WinUtilId": "IrfanSkiljan.IrfanView",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/i/IrfanSkiljan/IrfanView/4.75/IrfanSkiljan.IrfanView.locale.en-US.yaml",
+      "VerifiedVersion": "4.75",
+      "License": "Proprietary, free for private and non-commercial use"
+    },
+    {
+      "Key": "winutil_itch",
+      "Name": "Itch.io",
+      "WinUtilKey": "itch",
+      "WinUtilId": "ItchIo.Itch",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/i/ItchIo/Itch/26.20.0/ItchIo.Itch.locale.en-US.yaml",
+      "VerifiedVersion": "26.20.0",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_itunes",
+      "Name": "iTunes",
+      "WinUtilKey": "itunes",
+      "WinUtilId": "Apple.iTunes",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Apple/iTunes/12.13.11.1/Apple.iTunes.locale.en-US.yaml",
+      "VerifiedVersion": "12.13.11.1",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_java8",
+      "Name": "Amazon Corretto 8 (LTS)",
+      "WinUtilKey": "java8",
+      "WinUtilId": "Amazon.Corretto.8.JDK",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Amazon/Corretto/8/JDK/1.8.0.504/Amazon.Corretto.8.JDK.locale.en-US.yaml",
+      "VerifiedVersion": "1.8.0.504",
+      "License": "GPL-2.0 with Classpath Exception"
+    },
+    {
+      "Key": "winutil_java21",
+      "Name": "Amazon Corretto 21 (LTS)",
+      "WinUtilKey": "java21",
+      "WinUtilId": "Amazon.Corretto.21.JDK",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Amazon/Corretto/21/JDK/21.0.12.9/Amazon.Corretto.21.JDK.locale.en-US.yaml",
+      "VerifiedVersion": "21.0.12.9",
+      "License": "GPL-2.0 with Classpath Exception"
+    },
+    {
+      "Key": "winutil_java25",
+      "Name": "Amazon Corretto 25 (LTS)",
+      "WinUtilKey": "java25",
+      "WinUtilId": "Amazon.Corretto.25.JDK",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Amazon/Corretto/25/JDK/25.0.4.8/Amazon.Corretto.25.JDK.locale.en-US.yaml",
+      "VerifiedVersion": "25.0.4.8",
+      "License": "GPL-2.0 with Classpath Exception"
+    },
+    {
+      "Key": "winutil_jellyfinmediaplayer",
+      "Name": "Jellyfin Media Player",
+      "WinUtilKey": "jellyfinmediaplayer",
+      "WinUtilId": "Jellyfin.JellyfinMediaPlayer",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/Jellyfin/JellyfinMediaPlayer/1.12.0/Jellyfin.JellyfinMediaPlayer.locale.en-US.yaml",
+      "VerifiedVersion": "1.12.0",
+      "License": "GPL-2.0"
+    },
+    {
+      "Key": "winutil_jellyfinserver",
+      "Name": "Jellyfin Server",
+      "WinUtilKey": "jellyfinserver",
+      "WinUtilId": "Jellyfin.Server",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/Jellyfin/Server/10.11.11/Jellyfin.Server.locale.en-US.yaml",
+      "VerifiedVersion": "10.11.11",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_jetbrains",
+      "Name": "Jetbrains Toolbox",
+      "WinUtilKey": "jetbrains",
+      "WinUtilId": "JetBrains.Toolbox",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/JetBrains/Toolbox/3.8.0.0/JetBrains.Toolbox.locale.en-US.yaml",
+      "VerifiedVersion": "3.8.0.0",
+      "License": "Freeware"
+    },
+    {
+      "Key": "winutil_jpegview",
+      "Name": "JPEG View",
+      "WinUtilKey": "jpegview",
+      "WinUtilId": "sylikc.JPEGView",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/sylikc/JPEGView/1.3.46.0/sylikc.JPEGView.locale.en-US.yaml",
+      "VerifiedVersion": "1.3.46.0",
+      "License": "GPL-2.0"
+    },
+    {
+      "Key": "winutil_lazygit",
+      "Name": "Lazygit",
+      "WinUtilKey": "lazygit",
+      "WinUtilId": "JesseDuffield.lazygit",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/JesseDuffield/lazygit/0.65.0/JesseDuffield.lazygit.locale.en-US.yaml",
+      "VerifiedVersion": "0.65.0",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_mpc-qt",
+      "Name": "mpc-qt",
+      "WinUtilKey": "mpc-qt",
+      "WinUtilId": "mpc-qt.mpc-qt",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/mpc-qt/mpc-qt/26.07/mpc-qt.mpc-qt.locale.en-US.yaml",
+      "VerifiedVersion": "26.07",
+      "License": "GPL-2.0"
+    },
+    {
+      "Key": "winutil_mpv",
+      "Name": "mpv",
+      "WinUtilKey": "mpv",
+      "WinUtilId": "shinchiro.mpv",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/shinchiro/mpv/0.41.0/shinchiro.mpv.locale.en-US.yaml",
+      "VerifiedVersion": "0.41.0",
+      "License": "GPL-2.0-or-later"
+    },
+    {
+      "Key": "winutil_minitoolpartitionwizard",
+      "Name": "MiniTool Partition Wizard",
+      "WinUtilKey": "minitoolpartitionwizard",
+      "WinUtilId": "MiniTool.PartitionWizard.Free",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/MiniTool/PartitionWizard/Free/13.9/MiniTool.PartitionWizard.Free.locale.en-US.yaml",
+      "VerifiedVersion": "13.9",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_modrinth",
+      "Name": "Modrinth App",
+      "WinUtilKey": "modrinth",
+      "WinUtilId": "Modrinth.ModrinthApp",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Modrinth/ModrinthApp/0.21.2/Modrinth.ModrinthApp.locale.en-US.yaml",
+      "VerifiedVersion": "0.21.2",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_msedgeredirect",
+      "Name": "MSEdgeRedirect",
+      "WinUtilKey": "msedgeredirect",
+      "WinUtilId": "rcmaehl.MSEdgeRedirect",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/rcmaehl/MSEdgeRedirect/0.8.0.0/rcmaehl.MSEdgeRedirect.locale.en-US.yaml",
+      "VerifiedVersion": "0.8.0.0",
+      "License": "LGPL-3.0"
+    },
+    {
+      "Key": "winutil_msiafterburner",
+      "Name": "MSI Afterburner",
+      "WinUtilKey": "msiafterburner",
+      "WinUtilId": "Guru3D.Afterburner",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Guru3D/Afterburner/4.6.6/Guru3D.Afterburner.locale.en-US.yaml",
+      "VerifiedVersion": "4.6.6",
+      "License": "Freeware"
+    },
+    {
+      "Key": "winutil_mullvadvpn",
+      "Name": "Mullvad VPN",
+      "WinUtilKey": "mullvadvpn",
+      "WinUtilId": "MullvadVPN.MullvadVPN",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/MullvadVPN/MullvadVPN/2026.4/MullvadVPN.MullvadVPN.locale.en-US.yaml",
+      "VerifiedVersion": "2026.4",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_mullvadbrowser",
+      "Name": "Mullvad Browser",
+      "WinUtilKey": "mullvadbrowser",
+      "WinUtilId": "MullvadVPN.MullvadBrowser",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/MullvadVPN/MullvadBrowser/15.0.21/MullvadVPN.MullvadBrowser.locale.en-US.yaml",
+      "VerifiedVersion": "15.0.21",
+      "License": "MPL-2.0"
+    },
+    {
+      "Key": "winutil_nomacs",
+      "Name": "nomacs",
+      "WinUtilKey": "nomacs",
+      "WinUtilId": "nomacs.nomacs",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/n/nomacs/nomacs/3.22.3/nomacs.nomacs.locale.en-US.yaml",
+      "VerifiedVersion": "3.22.3",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_netbird",
+      "Name": "NetBird",
+      "WinUtilKey": "netbird",
+      "WinUtilId": "Netbird.Netbird",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/n/Netbird/Netbird/0.78.2/Netbird.Netbird.locale.en-US.yaml",
+      "VerifiedVersion": "0.78.2",
+      "License": "BSD-3-Clause"
+    },
+    {
+      "Key": "winutil_tailscale",
+      "Name": "Tailscale",
+      "WinUtilKey": "tailscale",
+      "WinUtilId": "Tailscale.Tailscale",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/Tailscale/Tailscale/1.102.4/Tailscale.Tailscale.locale.en-US.yaml",
+      "VerifiedVersion": "1.102.4",
+      "License": "BSD-3-Clause"
+    },
+    {
+      "Key": "winutil_nmap",
+      "Name": "Nmap",
+      "WinUtilKey": "nmap",
+      "WinUtilId": "Insecure.Nmap",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/i/Insecure/Nmap/7.80/Insecure.Nmap.locale.en-US.yaml",
+      "VerifiedVersion": "7.80",
+      "License": "Modified GNU GPLv2"
+    },
+    {
+      "Key": "winutil_nodejs",
+      "Name": "NodeJS",
+      "WinUtilKey": "nodejs",
+      "WinUtilId": "OpenJS.NodeJS",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/OpenJS/NodeJS/26.7.0/OpenJS.NodeJS.locale.en-US.yaml",
+      "VerifiedVersion": "26.7.0",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_pnpm",
+      "Name": "pnpm",
+      "WinUtilKey": "pnpm",
+      "WinUtilId": "pnpm.pnpm",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/pnpm/pnpm/12.4.1/pnpm.pnpm.locale.en-US.yaml",
+      "VerifiedVersion": "12.4.1",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_nuget",
+      "Name": "NuGet",
+      "WinUtilKey": "nuget",
+      "WinUtilId": "Microsoft.NuGet",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/NuGet/7.9.0/Microsoft.NuGet.locale.en-US.yaml",
+      "VerifiedVersion": "7.9.0",
+      "License": "Apache-2.0"
+    },
+    {
+      "Key": "winutil_obsidian",
+      "Name": "Obsidian",
+      "WinUtilKey": "obsidian",
+      "WinUtilId": "Obsidian.Obsidian",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/Obsidian/Obsidian/1.13.7/Obsidian.Obsidian.locale.en-US.yaml",
+      "VerifiedVersion": "1.13.7",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_okular",
+      "Name": "Okular",
+      "WinUtilKey": "okular",
+      "WinUtilId": "KDE.Okular",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/k/KDE/Okular/26.04.3/KDE.Okular.locale.en-US.yaml",
+      "VerifiedVersion": "26.04.3",
+      "License": "GPL-2.0-or-later"
+    },
+    {
+      "Key": "winutil_onedrive",
+      "Name": "OneDrive",
+      "WinUtilKey": "onedrive",
+      "WinUtilId": "Microsoft.OneDrive",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/OneDrive/26.150.0804.0011/Microsoft.OneDrive.locale.en-US.yaml",
+      "VerifiedVersion": "26.150.0804.0011",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_opautoclicker",
+      "Name": "OPAutoClicker",
+      "WinUtilKey": "OPAutoClicker",
+      "WinUtilId": "OPAutoClicker.OPAutoClicker",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/OPAutoClicker/OPAutoClicker/4.1/OPAutoClicker.OPAutoClicker.locale.en-US.yaml",
+      "VerifiedVersion": "4.1",
+      "License": "CC-BY-NC-2.0"
+    },
+    {
+      "Key": "winutil_openvpn",
+      "Name": "OpenVPN Connect",
+      "WinUtilKey": "OpenVPN",
+      "WinUtilId": "OpenVPNTechnologies.OpenVPNConnect",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/OpenVPNTechnologies/OpenVPNConnect/3.9.0/OpenVPNTechnologies.OpenVPNConnect.locale.en-US.yaml",
+      "VerifiedVersion": "3.9.0",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_ovirtualbox",
+      "Name": "Oracle VirtualBox",
+      "WinUtilKey": "OVirtualBox",
+      "WinUtilId": "Oracle.VirtualBox",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/Oracle/VirtualBox/7.2.18/Oracle.VirtualBox.locale.en-US.yaml",
+      "VerifiedVersion": "7.2.18",
+      "License": "GPL-3.0-only"
+    },
+    {
+      "Key": "winutil_policyplus",
+      "Name": "Policy Plus",
+      "WinUtilKey": "policyplus",
+      "WinUtilId": "Fleex255.PolicyPlus",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/f/Fleex255/PolicyPlus/June2021/Fleex255.PolicyPlus.locale.en-US.yaml",
+      "VerifiedVersion": "June2021",
+      "License": "CC-BY-4.0"
+    },
+    {
+      "Key": "winutil_processexplorer",
+      "Name": "Process Explorer",
+      "WinUtilKey": "processexplorer",
+      "WinUtilId": "Microsoft.Sysinternals.ProcessExplorer",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Sysinternals/ProcessExplorer/17.14/Microsoft.Sysinternals.ProcessExplorer.locale.en-US.yaml",
+      "VerifiedVersion": "17.14",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_paintdotnet",
+      "Name": "Paint.NET",
+      "WinUtilKey": "Paintdotnet",
+      "WinUtilId": "dotPDN.PaintDotNet",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/dotPDN/PaintDotNet/5.1.12/dotPDN.PaintDotNet.locale.en-US.yaml",
+      "VerifiedVersion": "5.1.12",
+      "License": "Proprietary (Freeware)"
+    },
+    {
+      "Key": "winutil_pdf-xchange",
+      "Name": "PDF-XChange Editor",
+      "WinUtilKey": "pdf-xchange",
+      "WinUtilId": "TrackerSoftware.PDF-XChangeEditor",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/TrackerSoftware/PDF-XChangeEditor/11.0.1.0/TrackerSoftware.PDF-XChangeEditor.locale.en-US.yaml",
+      "VerifiedVersion": "11.0.1.0",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_pdf24creator",
+      "Name": "PDF24 Creator",
+      "WinUtilKey": "pdf24creator",
+      "WinUtilId": "geeksoftwareGmbH.PDF24Creator",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/geeksoftwareGmbH/PDF24Creator/11.30.1/geeksoftwareGmbH.PDF24Creator.locale.en-US.yaml",
+      "VerifiedVersion": "11.30.1",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_pdfgear",
+      "Name": "PDFgear",
+      "WinUtilKey": "pdfgear",
+      "WinUtilId": "PDFgear.PDFgear",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/PDFgear/PDFgear/2.1.20/PDFgear.PDFgear.locale.en-US.yaml",
+      "VerifiedVersion": "2.1.20",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_pdfsam",
+      "Name": "PDFsam Basic",
+      "WinUtilKey": "pdfsam",
+      "WinUtilId": "PDFsam.PDFsam",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/PDFsam/PDFsam/6.0.5.0/PDFsam.PDFsam.locale.en-US.yaml",
+      "VerifiedVersion": "6.0.5.0",
+      "License": "AGPL-3.0"
+    },
+    {
+      "Key": "winutil_plex",
+      "Name": "Plex Media Server",
+      "WinUtilKey": "plex",
+      "WinUtilId": "Plex.PlexMediaServer",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Plex/PlexMediaServer/1.43.4.10903/Plex.PlexMediaServer.locale.en-US.yaml",
+      "VerifiedVersion": "1.43.4.10903",
+      "License": "Freemium"
+    },
+    {
+      "Key": "winutil_plexdesktop",
+      "Name": "Plex Desktop",
+      "WinUtilKey": "plexdesktop",
+      "WinUtilId": "Plex.Plex",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Plex/Plex/1.115.0/Plex.Plex.locale.en-US.yaml",
+      "VerifiedVersion": "1.115.0",
+      "License": "Freemium AND GPL-2.0"
+    },
+    {
+      "Key": "winutil_posh",
+      "Name": "Oh My Posh (Prompt)",
+      "WinUtilKey": "posh",
+      "WinUtilId": "JanDeDobbeleer.OhMyPosh",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/JanDeDobbeleer/OhMyPosh/31.3.0/JanDeDobbeleer.OhMyPosh.locale.en-US.yaml",
+      "VerifiedVersion": "31.3.0",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_postman",
+      "Name": "Postman",
+      "WinUtilKey": "postman",
+      "WinUtilId": "Postman.Postman",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Postman/Postman/12.28.1/Postman.Postman.locale.en-US.yaml",
+      "VerifiedVersion": "12.28.1",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_processlasso",
+      "Name": "Process Lasso",
+      "WinUtilKey": "processlasso",
+      "WinUtilId": "BitSum.ProcessLasso",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/BitSum/ProcessLasso/18.3.0.34/BitSum.ProcessLasso.locale.en-US.yaml",
+      "VerifiedVersion": "18.3.0.34",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_protonauth",
+      "Name": "Proton Authenticator",
+      "WinUtilKey": "protonauth",
+      "WinUtilId": "Proton.ProtonAuthenticator",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Proton/ProtonAuthenticator/1.1.6/Proton.ProtonAuthenticator.locale.en-US.yaml",
+      "VerifiedVersion": "1.1.6",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_protonmail",
+      "Name": "Proton Mail",
+      "WinUtilKey": "protonmail",
+      "WinUtilId": "Proton.ProtonMail",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Proton/ProtonMail/1.14.0/Proton.ProtonMail.locale.en-US.yaml",
+      "VerifiedVersion": "1.14.0",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_protonpass",
+      "Name": "Proton Pass",
+      "WinUtilKey": "protonpass",
+      "WinUtilId": "Proton.ProtonPass",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Proton/ProtonPass/1.40.2/Proton.ProtonPass.locale.en-US.yaml",
+      "VerifiedVersion": "1.40.2",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_processmonitor",
+      "Name": "Process Monitor",
+      "WinUtilKey": "processmonitor",
+      "WinUtilId": "Microsoft.Sysinternals.ProcessMonitor",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Sysinternals/ProcessMonitor/4.11/Microsoft.Sysinternals.ProcessMonitor.locale.en-US.yaml",
+      "VerifiedVersion": "4.11",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_qownnotes",
+      "Name": "QOwnNotes",
+      "WinUtilKey": "qownnotes",
+      "WinUtilId": "pbek.QOwnNotes",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/pbek/QOwnNotes/26.9.5/pbek.QOwnNotes.locale.en-US.yaml",
+      "VerifiedVersion": "26.9.5",
+      "License": "GPL-2.0"
+    },
+    {
+      "Key": "winutil_qtox",
+      "Name": "QTox",
+      "WinUtilKey": "qtox",
+      "WinUtilId": "Tox.qTox",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/Tox/qTox/1.18.5/Tox.qTox.locale.en-US.yaml",
+      "VerifiedVersion": "1.18.5",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_revo",
+      "Name": "Revo Uninstaller",
+      "WinUtilKey": "revo",
+      "WinUtilId": "RevoUninstaller.RevoUninstaller",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/RevoUninstaller/RevoUninstaller/2.1.7/RevoUninstaller.RevoUninstaller.locale.en-US.yaml",
+      "VerifiedVersion": "2.1.7",
+      "License": "Freeware"
+    },
+    {
+      "Key": "winutil_wiseprogramuninstaller",
+      "Name": "Wise Program Uninstaller (WiseCleaner)",
+      "WinUtilKey": "WiseProgramUninstaller",
+      "WinUtilId": "WiseCleaner.WiseProgramUninstaller",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/w/WiseCleaner/WiseProgramUninstaller/3.2.7/WiseCleaner.WiseProgramUninstaller.locale.en-US.yaml",
+      "VerifiedVersion": "3.2.7",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_rustlang",
+      "Name": "Rust",
+      "WinUtilKey": "rustlang",
+      "WinUtilId": "Rustlang.Rust.MSVC",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/Rustlang/Rust/MSVC/1.98.1/Rustlang.Rust.MSVC.locale.en-US.yaml",
+      "VerifiedVersion": "1.98.1",
+      "License": "Apache-2.0 AND MIT"
+    },
+    {
+      "Key": "winutil_sdio",
+      "Name": "Snappy Driver Installer Origin",
+      "WinUtilKey": "sdio",
+      "WinUtilId": "GlennDelahoy.SnappyDriverInstallerOrigin",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GlennDelahoy/SnappyDriverInstallerOrigin/2.0.4.887/GlennDelahoy.SnappyDriverInstallerOrigin.locale.en-US.yaml",
+      "VerifiedVersion": "2.0.4.887",
+      "License": "GPLv3"
+    },
+    {
+      "Key": "winutil_nilesoftshell",
+      "Name": "Nilesoft Shell",
+      "WinUtilKey": "nilesoftShell",
+      "WinUtilId": "Nilesoft.Shell",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/n/Nilesoft/Shell/1.9/Nilesoft.Shell.locale.en-US.yaml",
+      "VerifiedVersion": "1.9",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_systeminformer",
+      "Name": "System Informer",
+      "WinUtilKey": "systeminformer",
+      "WinUtilId": "WinsiderSS.SystemInformer",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/w/WinsiderSS/SystemInformer/4.0.26241.138/WinsiderSS.SystemInformer.locale.en-US.yaml",
+      "VerifiedVersion": "4.0.26241.138",
+      "License": "MIT License"
+    },
+    {
+      "Key": "winutil_signalrgb",
+      "Name": "SignalRGB",
+      "WinUtilKey": "signalrgb",
+      "WinUtilId": "WhirlwindFX.SignalRgb",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/w/WhirlwindFX/SignalRgb/2.5.74/WhirlwindFX.SignalRgb.locale.en-US.yaml",
+      "VerifiedVersion": "2.5.74",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_simplenote",
+      "Name": "Simplenote",
+      "WinUtilKey": "simplenote",
+      "WinUtilId": "Automattic.Simplenote",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/Automattic/Simplenote/2.24.0/Automattic.Simplenote.locale.en-US.yaml",
+      "VerifiedVersion": "2.24.0",
+      "License": "GPL-2.0"
+    },
+    {
+      "Key": "winutil_simplewall",
+      "Name": "Simplewall",
+      "WinUtilKey": "simplewall",
+      "WinUtilId": "Henry++.simplewall",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/h/Henry++/simplewall/3.8/Henry++.simplewall.locale.en-US.yaml",
+      "VerifiedVersion": "3.8",
+      "License": "GNU General Public License v3.0"
+    },
+    {
+      "Key": "winutil_slack",
+      "Name": "Slack",
+      "WinUtilKey": "slack",
+      "WinUtilId": "SlackTechnologies.Slack",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/SlackTechnologies/Slack/4.52.155/SlackTechnologies.Slack.locale.en-US.yaml",
+      "VerifiedVersion": "4.52.155",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_startallback",
+      "Name": "StartAllBack",
+      "WinUtilKey": "startallback",
+      "WinUtilId": "StartIsBack.StartAllBack",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/StartIsBack/StartAllBack/3.9/StartIsBack.StartAllBack.locale.en-US.yaml",
+      "VerifiedVersion": "3.9",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_starship",
+      "Name": "Starship (Shell Prompt)",
+      "WinUtilKey": "starship",
+      "WinUtilId": "Starship.Starship",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/Starship/Starship/1.26.0/Starship.Starship.locale.en-US.yaml",
+      "VerifiedVersion": "1.26.0",
+      "License": "ISC"
+    },
+    {
+      "Key": "winutil_roblox",
+      "Name": "Roblox",
+      "WinUtilKey": "roblox",
+      "WinUtilId": "Roblox.Roblox",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/Roblox/Roblox/0.726/Roblox.Roblox.locale.en-US.yaml",
+      "VerifiedVersion": "0.726",
+      "License": "Proprietary (Roblox Terms of Use)"
+    },
+    {
+      "Key": "winutil_sublimetext",
+      "Name": "Sublime Text",
+      "WinUtilKey": "sublimetext",
+      "WinUtilId": "SublimeHQ.SublimeText.4",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/s/SublimeHQ/SublimeText/4/4.0.0.420000/SublimeHQ.SublimeText.4.locale.en-US.yaml",
+      "VerifiedVersion": "4.0.0.420000",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_tcpview",
+      "Name": "TCPView",
+      "WinUtilKey": "tcpview",
+      "WinUtilId": "Microsoft.Sysinternals.TCPView",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Sysinternals/TCPView/4.19/Microsoft.Sysinternals.TCPView.locale.en-US.yaml",
+      "VerifiedVersion": "4.19",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_teams",
+      "Name": "Teams",
+      "WinUtilKey": "teams",
+      "WinUtilId": "Microsoft.Teams",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/Teams/26198.304.4946.9672/Microsoft.Teams.locale.en-US.yaml",
+      "VerifiedVersion": "26198.304.4946.9672",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_teamviewer",
+      "Name": "TeamViewer",
+      "WinUtilKey": "teamviewer",
+      "WinUtilId": "TeamViewer.TeamViewer",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/TeamViewer/TeamViewer/15.81.6/TeamViewer.TeamViewer.locale.en-US.yaml",
+      "VerifiedVersion": "15.81.6",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_teamspeak6",
+      "Name": "TeamSpeak 6",
+      "WinUtilKey": "teamspeak6",
+      "WinUtilId": "TeamSpeakSystems.TeamSpeakClient.Beta.6",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/TeamSpeakSystems/TeamSpeakClient/Beta/6/6.0.0-beta4.1/TeamSpeakSystems.TeamSpeakClient.Beta.6.locale.en-US.yaml",
+      "VerifiedVersion": "6.0.0-beta4.1",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_betterbird",
+      "Name": "Betterbird",
+      "WinUtilKey": "betterbird",
+      "WinUtilId": "Betterbird.Betterbird",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/b/Betterbird/Betterbird/153.2.0/Betterbird.Betterbird.locale.en-US.yaml",
+      "VerifiedVersion": "153.2.0",
+      "License": "MPL-2.0"
+    },
+    {
+      "Key": "winutil_totalcommander",
+      "Name": "Total Commander",
+      "WinUtilKey": "totalcommander",
+      "WinUtilId": "Ghisler.TotalCommander",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/Ghisler/TotalCommander/11.58/Ghisler.TotalCommander.locale.en-US.yaml",
+      "VerifiedVersion": "11.58",
+      "License": "Shareware"
+    },
+    {
+      "Key": "winutil_treesize",
+      "Name": "TreeSize Free",
+      "WinUtilKey": "treesize",
+      "WinUtilId": "JAMSoftware.TreeSize.Free",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/j/JAMSoftware/TreeSize/Free/4.8/JAMSoftware.TreeSize.Free.locale.en-US.yaml",
+      "VerifiedVersion": "4.8",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_ubisoft",
+      "Name": "Ubisoft Connect",
+      "WinUtilKey": "ubisoft",
+      "WinUtilId": "Ubisoft.Connect",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/u/Ubisoft/Connect/173.1.0.13333/Ubisoft.Connect.locale.en-US.yaml",
+      "VerifiedVersion": "173.1.0.13333",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_ungoogled",
+      "Name": "Ungoogled Chromium",
+      "WinUtilKey": "ungoogled",
+      "WinUtilId": "eloston.ungoogled-chromium",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/e/eloston/ungoogled-chromium/151.0.7922.173/eloston.ungoogled-chromium.locale.en-US.yaml",
+      "VerifiedVersion": "151.0.7922.173",
+      "License": "BSD-3-Clause"
+    },
+    {
+      "Key": "winutil_unity",
+      "Name": "Unity Game Engine",
+      "WinUtilKey": "unity",
+      "WinUtilId": "Unity.UnityHub",
+      "Verification": "Guided fallback: HTTP Error 403: rate limit exceeded",
+      "ManifestUrl": "https://unity.com/",
+      "VerifiedVersion": "",
+      "License": "See publisher terms"
+    },
+    {
+      "Key": "winutil_vagrant",
+      "Name": "Vagrant",
+      "WinUtilKey": "vagrant",
+      "WinUtilId": "Hashicorp.Vagrant",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/h/Hashicorp/Vagrant/2.4.9/Hashicorp.Vagrant.locale.en-US.yaml",
+      "VerifiedVersion": "2.4.9",
+      "License": "BUSL-1.1"
+    },
+    {
+      "Key": "winutil_ventoy",
+      "Name": "Ventoy",
+      "WinUtilKey": "ventoy",
+      "WinUtilId": "Ventoy.Ventoy",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/v/Ventoy/Ventoy/1.1.17/Ventoy.Ventoy.locale.en-US.yaml",
+      "VerifiedVersion": "1.1.17",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_vesktop",
+      "Name": "Vesktop",
+      "WinUtilKey": "vesktop",
+      "WinUtilId": "Vencord.Vesktop",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/v/Vencord/Vesktop/1.6.6/Vencord.Vesktop.locale.en-US.yaml",
+      "VerifiedVersion": "1.6.6",
+      "License": "GPL-3.0"
+    },
+    {
+      "Key": "winutil_viber",
+      "Name": "Viber",
+      "WinUtilKey": "viber",
+      "WinUtilId": "Rakuten.Viber",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/Rakuten/Viber/28.8.0.0/Rakuten.Viber.locale.en-US.yaml",
+      "VerifiedVersion": "28.8.0.0",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_visualstudio2022",
+      "Name": "Visual Studio 2022",
+      "WinUtilKey": "visualstudio2022",
+      "WinUtilId": "Microsoft.VisualStudio.2022.Community",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/VisualStudio/2022/Community/17.14.40/Microsoft.VisualStudio.2022.Community.locale.en-US.yaml",
+      "VerifiedVersion": "17.14.40",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_visualstudio2026",
+      "Name": "Visual Studio 2026",
+      "WinUtilKey": "visualstudio2026",
+      "WinUtilId": "Microsoft.VisualStudio.Community",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/Microsoft/VisualStudio/Community/18.10.0/Microsoft.VisualStudio.Community.locale.en-US.yaml",
+      "VerifiedVersion": "18.10.0",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_vivaldi",
+      "Name": "Vivaldi",
+      "WinUtilKey": "vivaldi",
+      "WinUtilId": "Vivaldi.Vivaldi",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/v/Vivaldi/Vivaldi/8.2.4133.52/Vivaldi.Vivaldi.locale.en-US.yaml",
+      "VerifiedVersion": "8.2.4133.52",
+      "License": "Freeware"
+    },
+    {
+      "Key": "winutil_vrdesktopstreamer",
+      "Name": "Virtual Desktop Streamer",
+      "WinUtilKey": "vrdesktopstreamer",
+      "WinUtilId": "VirtualDesktop.Streamer",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/v/VirtualDesktop/Streamer/1.34.22/VirtualDesktop.Streamer.locale.en-US.yaml",
+      "VerifiedVersion": "1.34.22",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_waterfox",
+      "Name": "Waterfox",
+      "WinUtilKey": "waterfox",
+      "WinUtilId": "Waterfox.Waterfox",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/w/Waterfox/Waterfox/G6.0.20/Waterfox.Waterfox.locale.en-US.yaml",
+      "VerifiedVersion": "G6.0.20",
+      "License": "MPL-2.0"
+    },
+    {
+      "Key": "winutil_whatsapp",
+      "Name": "WhatsApp Desktop",
+      "WinUtilKey": "whatsapp",
+      "WinUtilId": "msstore:9NKSQGP7F2NH",
+      "Verification": "Official Microsoft Store listing",
+      "ManifestUrl": "https://apps.microsoft.com/detail/9NKSQGP7F2NH",
+      "VerifiedVersion": "Store",
+      "License": "See publisher terms"
+    },
+    {
+      "Key": "winutil_wingetui",
+      "Name": "UniGetUI",
+      "WinUtilKey": "wingetui",
+      "WinUtilId": "Devolutions.UniGetUI",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/Devolutions/UniGetUI/2026.2.7/Devolutions.UniGetUI.locale.en-US.yaml",
+      "VerifiedVersion": "2026.2.7",
+      "License": "MIT"
+    },
+    {
+      "Key": "winutil_winrar",
+      "Name": "WinRAR",
+      "WinUtilKey": "winrar",
+      "WinUtilId": "RARLab.WinRAR",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/RARLab/WinRAR/7.23.0/RARLab.WinRAR.locale.en-US.yaml",
+      "VerifiedVersion": "7.23.0",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_wiztree",
+      "Name": "WizTree",
+      "WinUtilKey": "wiztree",
+      "WinUtilId": "AntibodySoftware.WizTree",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/a/AntibodySoftware/WizTree/4.32/AntibodySoftware.WizTree.locale.en-US.yaml",
+      "VerifiedVersion": "4.32",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_xeheditor",
+      "Name": "HxD Hex Editor",
+      "WinUtilKey": "xeheditor",
+      "WinUtilId": "MHNexus.HxD",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/m/MHNexus/HxD/2.5/MHNexus.HxD.locale.en-US.yaml",
+      "VerifiedVersion": "2.5",
+      "License": "Freeware"
+    },
+    {
+      "Key": "winutil_xournal",
+      "Name": "Xournal++",
+      "WinUtilKey": "xournal",
+      "WinUtilId": "Xournal++.Xournal++",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/x/Xournal++/Xournal++/1.3.7/Xournal++.Xournal++.locale.en-US.yaml",
+      "VerifiedVersion": "1.3.7",
+      "License": "GPL-2.0"
+    },
+    {
+      "Key": "winutil_yarn",
+      "Name": "Yarn",
+      "WinUtilKey": "yarn",
+      "WinUtilId": "Yarn.Yarn",
+      "Verification": "Guided fallback: HTTP Error 403: rate limit exceeded",
+      "ManifestUrl": "https://yarnpkg.com/",
+      "VerifiedVersion": "",
+      "License": "See publisher terms"
+    },
+    {
+      "Key": "winutil_zoom",
+      "Name": "Zoom",
+      "WinUtilKey": "zoom",
+      "WinUtilId": "Zoom.Zoom",
+      "Verification": "Guided fallback: HTTP Error 403: rate limit exceeded",
+      "ManifestUrl": "https://zoom.us/",
+      "VerifiedVersion": "",
+      "License": "See publisher terms"
+    },
+    {
+      "Key": "winutil_tightvnc",
+      "Name": "TightVNC",
+      "WinUtilKey": "tightvnc",
+      "WinUtilId": "GlavSoft.TightVNC",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/g/GlavSoft/TightVNC/2.8.88/GlavSoft.TightVNC.locale.en-US.yaml",
+      "VerifiedVersion": "2.8.88",
+      "License": "GNU General Public License v2"
+    },
+    {
+      "Key": "winutil_overwolf",
+      "Name": "Overwolf",
+      "WinUtilKey": "Overwolf",
+      "WinUtilId": "Overwolf.CurseForge",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/o/Overwolf/CurseForge/0.220.1-9343/Overwolf.CurseForge.locale.en-US.yaml",
+      "VerifiedVersion": "0.220.1-9343",
+      "License": "Proprietary"
+    },
+    {
+      "Key": "winutil_ofgb",
+      "Name": "OFGB (Oh Frick Go Back)",
+      "WinUtilKey": "OFGB",
+      "WinUtilId": "xM4ddy.OFGB",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/x/xM4ddy/OFGB/0.4/xM4ddy.OFGB.locale.en-US.yaml",
+      "VerifiedVersion": "0.4",
+      "License": "Unlicense"
+    },
+    {
+      "Key": "winutil_zed",
+      "Name": "Zed",
+      "WinUtilKey": "Zed",
+      "WinUtilId": "ZedIndustries.Zed",
+      "Verification": "Guided fallback: HTTP Error 403: rate limit exceeded",
+      "ManifestUrl": "https://zed.dev/",
+      "VerifiedVersion": "",
+      "License": "See publisher terms"
+    },
+    {
+      "Key": "winutil_deskflow",
+      "Name": "Deskflow",
+      "WinUtilKey": "deskflow",
+      "WinUtilId": "Deskflow.Deskflow",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/Deskflow/Deskflow/1.26.0/Deskflow.Deskflow.locale.en-US.yaml",
+      "VerifiedVersion": "1.26.0",
+      "License": "GPL-2.0"
+    },
+    {
+      "Key": "winutil_ruby",
+      "Name": "Ruby",
+      "WinUtilKey": "Ruby",
+      "WinUtilId": "RubyInstallerTeam.Ruby.4.0",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/RubyInstallerTeam/Ruby/4/0/4.0.6-1/RubyInstallerTeam.Ruby.4.0.locale.en-US.yaml",
+      "VerifiedVersion": "4.0.6-1",
+      "License": "BSD-3-Clause"
+    },
+    {
+      "Key": "winutil_lua",
+      "Name": "Lua",
+      "WinUtilKey": "Lua",
+      "WinUtilId": "rjpcomputing.luaforwindows",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/r/rjpcomputing/luaforwindows/5.1.5.52/rjpcomputing.luaforwindows.locale.en-US.yaml",
+      "VerifiedVersion": "5.1.5.52",
+      "License": "As Is License"
+    },
+    {
+      "Key": "winutil_cloudflarewarp",
+      "Name": "Cloudflare WARP",
+      "WinUtilKey": "CloudflareWARP",
+      "WinUtilId": "Cloudflare.Warp",
+      "Verification": "WinGet manifest",
+      "ManifestUrl": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/c/Cloudflare/Warp/26.7.1376.0/Cloudflare.Warp.locale.en-US.yaml",
+      "VerifiedVersion": "26.7.1376.0",
+      "License": "Proprietary"
+    }
+  ]
+}

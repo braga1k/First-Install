@@ -1,0 +1,10 @@
+[
+  {"Key":"essentials","Name":"Everyday essentials","Description":"Browsing, files, media and passwords.","Apps":["app8","app1","extra_vlc","app17","extra_powertoys","extra_bitwarden"]},
+  {"Key":"creator","Name":"Creator","Description":"Video editing, recording, conversion and sharing.","Apps":["resolve","app11","app25","extra_handbrake","extra_sharex","extra_gimp","blip"]},
+  {"Key":"gaming","Name":"Gaming","Description":"Games, voice chat, a unified library and runtimes.","Apps":["app14","app3","ts3","extra_playnite","app4","app15"]},
+  {"Key":"development","Name":"Development","Description":"Code, Git, Python, Node.js and API testing.","Apps":["vscode","extra_git","extra_githubdesktop","python","extra_nodejslts","extra_terminal","extra_uv","winutil_bruno"]},
+  {"Key":"office","Name":"Office & study","Description":"Documents, email, notes, research and PDFs.","Apps":["extra_libreoffice","extra_thunderbird","extra_sumatra","extra_joplin","extra_zotero"]},
+  {"Key":"audio","Name":"Audio production","Description":"Recording, mixing, audio editing and system EQ.","Apps":["app25","flstudio","extra_audacity","peace"]},
+  {"Key":"3d","Name":"3D & printing","Description":"3D modeling, CAD and print preparation.","Apps":["extra_blender","fusion","bambu"]},
+  {"Key":"opensource","Name":"Open-source essentials","Description":"An everyday setup built from open-source options.","Apps":["extra_firefox","extra_libreoffice","extra_vlc","extra_7zip","extra_keepassxc","extra_signal","extra_localsend"]}
+]
