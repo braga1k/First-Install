@@ -4,11 +4,18 @@
 
 Browse 253 applications, start from a ready-made profile, or save your own selection. Review everything before installation begins.
 
-**Version 2.7** · Windows x64 · PowerShell + WPF
+**Version 2.8** · Windows x64 · PowerShell + WPF
 
 [Download FirstInstall.exe](https://github.com/braga1k/First-Install/raw/refs/heads/main/bin/FirstInstall.exe) · [Supported apps](docs/SUPPORTED-APPS.md) · [Profiles](docs/PROFILES.md) · [Report an issue](https://github.com/braga1k/First-Install/issues)
 
 ![First Install showing its application library and Windows accent color](docs/images/first-install.png)
+
+## New in 2.8
+
+- Cards appear in reading order with a short staggered entrance.
+- Clicking a card gives a subtle scale animation while selection updates immediately.
+- Smooth profile menus, setup row movement and queue progress.
+- Windows reduced-motion preferences are respected, and repeated input replaces animations instead of queuing them.
 
 ## New in 2.7
 
@@ -40,7 +47,7 @@ The executable contains the app's script, interface and catalog. You do not need
 
 ### Requirements
 
-- Windows 10 or Windows 11, **64-bit**. Version 2.7 was tested on Windows 11 24H2.
+- Windows 10 or Windows 11, **64-bit**. Version 2.8 was tested on Windows 11 24H2.
 - Windows PowerShell 5.1, WPF and .NET Framework 4.x.
 - WinGet, provided by Windows App Installer, for automatic installations.
 - An internet connection to download applications. Individual installers may request administrator access.
@@ -106,7 +113,7 @@ powershell.exe -NoProfile -STA -ExecutionPolicy Bypass -File .\tests\smoke.ps1
 
 The executable also accepts `--self-test` and `--smoke-test`; these write their results beside the executable. The tests validate catalog consistency, dependency handling, profile save/load, category and search layout, scrolling, Windows accent updates, contrast and window controls. UI tests briefly open windows and do not install third-party applications.
 
-The bundled 2.7 executable passed both checks on Windows 11. Actual installation of every catalog entry has not been tested. High-contrast mode and large text scaling still need broader validation.
+The bundled 2.8 executable passed both checks on Windows 11. Actual installation of every catalog entry has not been tested. High-contrast mode and large text scaling still need broader validation.
 
 ## Troubleshooting
 

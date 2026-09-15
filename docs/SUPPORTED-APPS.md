@@ -1,4 +1,4 @@
-# Supported apps — First Install 2.7
+# Supported apps — First Install 2.8
 
 253 apps. 233 WinUtil entries are represented; some entries share the retained Visual C++ runtime bundle. IDs for existing profiles are unchanged.
 

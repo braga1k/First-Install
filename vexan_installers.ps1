@@ -180,6 +180,79 @@ try {
         $label.TextWrapping = 'Wrap'
         return $label
     }
+    function Test-MotionEnabled {
+        return [Windows.SystemParameters]::ClientAreaAnimation -and -not [Windows.SystemParameters]::HighContrast
+    }
+    function Animate-Value($Target,$Property,[double]$From,[double]$To,[int]$Milliseconds=160) {
+        $Target.BeginAnimation($Property,$null)
+        $Target.SetValue($Property,$To)
+        if (-not (Test-MotionEnabled) -or -not $window.IsVisible -or [Math]::Abs($From-$To) -lt 0.001) { return }
+        $animation=[Windows.Media.Animation.DoubleAnimation]::new($From,$To,[Windows.Duration]::new([TimeSpan]::FromMilliseconds($Milliseconds)))
+        $ease=[Windows.Media.Animation.CubicEase]::new(); $ease.EasingMode='EaseOut'
+        $animation.EasingFunction=$ease; $animation.FillBehavior='Stop'
+        $Target.BeginAnimation($Property,$animation,[Windows.Media.Animation.HandoffBehavior]::SnapshotAndReplace)
+    }
+    function Animate-Appearance($Element,[double]$Offset=5) {
+        Animate-Value $Element ([Windows.UIElement]::OpacityProperty) 0.72 1
+        $move=[Windows.Media.TranslateTransform]::new(); $Element.RenderTransform=$move
+        Animate-Value $move ([Windows.Media.TranslateTransform]::YProperty) $Offset 0
+    }
+    function Animate-CardEntrance($Card,[int]$Delay) {
+        $Card.ApplyTemplate()
+        $surface=$Card.Template.FindName('Card',$Card)
+        if ($null -eq $surface) { return }
+        $surface.RenderTransformOrigin=[Windows.Point]::new(0.5,0.5)
+        $group=[Windows.Media.TransformGroup]::new()
+        $scale=[Windows.Media.ScaleTransform]::new(1,1)
+        $move=[Windows.Media.TranslateTransform]::new()
+        $group.Children.Add($scale); $group.Children.Add($move); $surface.RenderTransform=$group
+        foreach ($spec in @(@($surface,[Windows.UIElement]::OpacityProperty,0.15,1),@($move,[Windows.Media.TranslateTransform]::YProperty,10,0))) {
+            $target=$spec[0]; $property=$spec[1]
+            $target.BeginAnimation($property,$null); $target.SetValue($property,[double]$spec[3])
+            if (-not (Test-MotionEnabled) -or -not $window.IsVisible) { continue }
+            $frames=[Windows.Media.Animation.DoubleAnimationUsingKeyFrames]::new()
+            $frames.KeyFrames.Add([Windows.Media.Animation.DiscreteDoubleKeyFrame]::new([double]$spec[2],[Windows.Media.Animation.KeyTime]::FromTimeSpan([TimeSpan]::Zero)))
+            $frames.KeyFrames.Add([Windows.Media.Animation.DiscreteDoubleKeyFrame]::new([double]$spec[2],[Windows.Media.Animation.KeyTime]::FromTimeSpan([TimeSpan]::FromMilliseconds($Delay))))
+            $ease=[Windows.Media.Animation.CubicEase]::new(); $ease.EasingMode='EaseOut'
+            $frames.KeyFrames.Add([Windows.Media.Animation.EasingDoubleKeyFrame]::new([double]$spec[3],[Windows.Media.Animation.KeyTime]::FromTimeSpan([TimeSpan]::FromMilliseconds($Delay+180)),$ease))
+            $frames.FillBehavior='Stop'
+            $target.BeginAnimation($property,$frames,[Windows.Media.Animation.HandoffBehavior]::SnapshotAndReplace)
+        }
+    }
+    function Animate-Library {
+        if (-not $window.IsVisible) { return }
+        $ui.Cards.UpdateLayout()
+        $index=0
+        foreach ($card in $ui.Cards.Children) {
+            $y=$card.TranslatePoint([Windows.Point]::new(0,0),$ui.Cards).Y
+            # Only stagger the current viewport; long catalogs must not queue seconds of motion.
+            $delay=if ($y -lt $ui.LibraryScroll.ViewportHeight) { [Math]::Min(240,$index*35) } else { 0 }
+            if ($y -lt $ui.LibraryScroll.ViewportHeight) { Animate-CardEntrance $card $delay; $index++ }
+            else {
+                $card.ApplyTemplate(); $surface=$card.Template.FindName('Card',$card)
+                if ($surface) { $surface.BeginAnimation([Windows.UIElement]::OpacityProperty,$null); $surface.Opacity=1; $surface.RenderTransform=[Windows.Media.Transform]::Identity }
+            }
+        }
+    }
+    function Animate-CardClick($Card) {
+        $Card.ApplyTemplate(); $surface=$Card.Template.FindName('Card',$Card)
+        if (-not $surface) { return }
+        $surface.BeginAnimation([Windows.UIElement]::OpacityProperty,$null); $surface.Opacity=1
+        $scale=[Windows.Media.ScaleTransform]::new(1,1)
+        $surface.RenderTransformOrigin=[Windows.Point]::new(0.5,0.5); $surface.RenderTransform=$scale
+        Animate-Value $scale ([Windows.Media.ScaleTransform]::ScaleXProperty) 0.965 1 170
+        Animate-Value $scale ([Windows.Media.ScaleTransform]::ScaleYProperty) 0.965 1 170
+    }
+    $window.Add_ContentRendered({ Animate-Library })
+    function Enable-HoverMotion($Element) {
+        $Element.Add_MouseEnter({ param($sender,$args)
+            if ($sender.IsEnabled) { Animate-Value $sender ([Windows.UIElement]::OpacityProperty) 0.88 1 140 }
+        })
+    }
+    foreach ($control in $ui.Values) { if ($control -is [Windows.Controls.Button]) { Enable-HoverMotion $control } }
+    function Set-QueueProgress([double]$Value) {
+        Animate-Value $ui.Progress ([Windows.Controls.Primitives.RangeBase]::ValueProperty) $ui.Progress.Value $Value 200
+    }
     function Update-Selection {
         $script:syncing = $true
         foreach ($app in $catalog) { $checks[$app.Key].IsChecked = $selected.ContainsKey($app.Key) }
@@ -188,13 +261,15 @@ try {
         $ui.Install.IsEnabled = ($selected.Count -gt 0 -and -not $busy)
         $ui.SaveSetup.IsEnabled=($selected.Count -gt 0 -and -not $busy)
         $script:removeButtons=@{}
+        $oldRows=@{}
+        foreach ($child in $ui.QueuePanel.Children) { if ($child.Tag) { $oldRows[[string]$child.Tag]=$child.TranslatePoint([Windows.Point]::new(0,0),$ui.QueuePanel).Y } }
         $ui.QueuePanel.Children.Clear()
         if ($selected.Count -eq 0) {
             $label = New-Label 'Your next setup starts here. Select apps from the library.' '#8793A2'
             $label.Margin = '0,15,0,0'; $ui.QueuePanel.Children.Add($label) | Out-Null
         }
         foreach ($app in @(Get-Plan @($catalog | Where-Object { $selected.ContainsKey($_.Key) } | ForEach-Object { $_.Key }))) {
-            $panel = New-Object Windows.Controls.StackPanel; $panel.Margin = '0,8,0,9'
+            $panel = New-Object Windows.Controls.StackPanel; $panel.Margin = '0,8,0,9'; $panel.Tag=$app.Key
             $title = New-Label $app.Name; $title.FontWeight = 'SemiBold'
             $row=New-Object Windows.Controls.Grid
             $row.ColumnDefinitions.Add((New-Object Windows.Controls.ColumnDefinition))
@@ -209,6 +284,7 @@ try {
             $remove.ToolTip='Remove '+$app.Name+' from your setup'
             [Windows.Automation.AutomationProperties]::SetName($remove,'Remove '+$app.Name)
             $remove.IsEnabled=-not $busy
+            Enable-HoverMotion $remove
             [Windows.Controls.Grid]::SetColumn($remove,1)
             $remove.Add_Click({ param($sender,$eventArgs) Remove-SelectedApp ([string]$sender.Tag) })
             $script:removeButtons[$app.Key]=$remove
@@ -218,6 +294,17 @@ try {
             $label = New-Label $text '#A0AAB7' 12; $label.Margin = '0,4,0,0'
             $panel.Children.Add($label) | Out-Null
             $ui.QueuePanel.Children.Add($panel) | Out-Null
+        }
+        if ($window.IsVisible) {
+            $ui.QueuePanel.UpdateLayout()
+            foreach ($row in $ui.QueuePanel.Children) {
+                if (-not $row.Tag) { continue }
+                if ($oldRows.ContainsKey([string]$row.Tag)) {
+                    $delta=$oldRows[[string]$row.Tag]-$row.TranslatePoint([Windows.Point]::new(0,0),$ui.QueuePanel).Y
+                    $move=[Windows.Media.TranslateTransform]::new(); $row.RenderTransform=$move
+                    Animate-Value $move ([Windows.Media.TranslateTransform]::YProperty) ([Math]::Max(-32,[Math]::Min(32,$delta))) 0
+                } else { Animate-Appearance $row }
+            }
         }
     }
     function Remove-SelectedApp([string]$Key) {
@@ -250,9 +337,11 @@ try {
         $ui.ResultCount.Text = "$category · $count apps"
         $ui.Empty.Visibility = if ($count -eq 0) { 'Visible' } else { 'Collapsed' }
         $ui.LibraryScroll.ScrollToTop()
+        Animate-Library
     }
     foreach ($app in $catalog) {
         $check = New-Object Windows.Controls.CheckBox
+        Enable-HoverMotion $check
         $check.Style = $window.Resources['CardCheck']; $check.Tag = $app.Key
         $check.Width = 220; $check.Margin = '0,0,12,12'; $check.MinHeight = 190
         $check.ToolTip = if ($app.Ids.Count) { 'WinGet: ' + ($app.Ids -join ', ') } else { $app.Url }
@@ -285,12 +374,14 @@ try {
                 foreach ($item in $catalog) { if ($item.Requires -contains $key) { $selected.Remove($item.Key) } }
             }
             Update-Selection
+            Animate-CardClick $sender
         })
         $checks[$app.Key] = $check; $ui.Cards.Children.Add($check) | Out-Null
     }
     foreach ($cat in @('All apps') + @($catalog.Category | Sort-Object -Unique)) {
         $button = New-Object Windows.Controls.Button
         $button.Content = New-Label $(if ($cat -eq $category) { '› ' + $cat } else { $cat }) '#DCE1E7' 12
+        Enable-HoverMotion $button
         $button.Tag = $cat; $button.Margin = '0,0,0,6'
         $button.Padding = '8,10'; $button.HorizontalContentAlignment = 'Left'
         if ($cat -eq $category) { $button.SetResourceReference([Windows.Controls.Control]::BackgroundProperty,'AccentSurfaceBrush') } else { $button.Background='Transparent' }
@@ -323,6 +414,7 @@ try {
     $profileMenu.Resources=$window.Resources
     $profileMenu.PlacementTarget=$ui.Profiles
     $profileMenu.Placement='Bottom'
+    $profileMenu.Add_Opened({ Animate-Appearance $profileMenu 3 })
     $profileItems=@{}
     foreach ($profile in $profiles) {
         $plan=@(Get-Plan @($profile.Apps))
@@ -348,6 +440,7 @@ try {
     $userProfileMenu.Resources=$window.Resources
     $userProfileMenu.PlacementTarget=$ui.UserProfiles
     $userProfileMenu.Placement='Bottom'
+    $userProfileMenu.Add_Opened({ Animate-Appearance $userProfileMenu 3 })
     foreach ($action in @(@('Export','Save current selection...'),@('Import','Load saved profile...'))) {
         $item=New-Object Windows.Controls.MenuItem
         $item.Header=$action[1]
@@ -501,7 +594,7 @@ try {
         $script:control=[hashtable]::Synchronized(@{Stop=$false})
         $script:total=$plan.Count; $script:completed=0
         $statuses.Clear(); foreach ($app in $plan) { $statuses[$app.Key]='Queued' }
-        $ui.Progress.Value=0; $ui.Status.Text='Installation in progress…'
+        Set-QueueProgress 0; $ui.Status.Text='Installation in progress…'
         Set-Busy $true
         try {
             $script:job=[PowerShell]::Create()
@@ -532,7 +625,7 @@ try {
                     try { Start-Process $event.Text }
                     catch { Add-Log ('Could not open: ' + $event.Text) }
                 }
-                'progress' { $script:completed++; $ui.Progress.Value=100*$script:completed/$script:total; $ui.Status.Text="$script:completed of $script:total processed" }
+                'progress' { $script:completed++; Set-QueueProgress (100*$script:completed/$script:total); $ui.Status.Text="$script:completed of $script:total processed" }
             }
         }
         if ($script:async.IsCompleted -and $script:events.IsEmpty) {
@@ -769,10 +862,30 @@ try {
                 $stream=[IO.File]::Create($PreviewPath)
                 try { $encoder.Save($stream) } finally { $stream.Dispose() }
             }
+            Set-QueueProgress 65
+            $savedMotionFunction=${function:Test-MotionEnabled}
+            try {
+                function Test-MotionEnabled { return $true }
+                $testCard=$checks['affinity']
+                Animate-CardEntrance $testCard 70
+                $testSurface=$testCard.Template.FindName('Card',$testCard)
+                if (-not $testSurface.HasAnimatedProperties) { throw 'Card entrance animation did not start.' }
+                Animate-CardClick $testCard
+                if (-not $testSurface.RenderTransform.HasAnimatedProperties) { throw 'Click feedback did not start.' }
+                Wait-WindowMessages; Wait-WindowMessages; Wait-WindowMessages
+                if ($testSurface.RenderTransform.ScaleX -ne 1 -or $testSurface.Opacity -ne 1) { throw 'Card animation did not settle.' }
+                function Test-MotionEnabled { return $false }
+                Animate-CardEntrance $testCard 70
+                Animate-CardClick $testCard
+                if ($testSurface.HasAnimatedProperties -or $testSurface.RenderTransform.HasAnimatedProperties -or $testSurface.RenderTransform.ScaleX -ne 1) { throw 'Card motion ignored reduced motion.' }
+                Set-QueueProgress 100
+                Animate-Appearance $ui.Cards
+                if ($ui.Progress.Value -ne 100 -or $ui.Progress.HasAnimatedProperties -or $ui.Cards.Opacity -ne 1 -or $ui.Cards.HasAnimatedProperties -or $ui.Cards.RenderTransform.Y -ne 0) { throw 'Reduced motion did not apply final state immediately.' }
+            } finally { ${function:Test-MotionEnabled}=$savedMotionFunction }
             $ui.CloseWindow.RaiseEvent([Windows.RoutedEventArgs]::new([Windows.Controls.Primitives.ButtonBase]::ClickEvent))
         })
         $window.ShowDialog() | Out-Null
-        'PASS: 253 apps, packed category/search grids, preserved selection, setup remove buttons and save availability, Windows accent updates and contrast, user profile save/load and invalid-file rejection, 8 profiles, themed profile menu, grid widths, 48-DIP thumb, scrolling to the last app and window controls.'
+        'PASS: 253 apps, packed category/search grids, preserved selection, staggered card entrance, click feedback, motion endpoints and reduced-motion fallback, setup remove buttons and save availability, Windows accent updates and contrast, user profile save/load and invalid-file rejection, 8 profiles, themed profile menu, grid widths, 48-DIP thumb, scrolling to the last app and window controls.'
         return
     }
     $timer.Start()

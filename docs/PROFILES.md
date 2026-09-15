@@ -1,4 +1,4 @@
-# Built-in profiles — First Install 2.7
+# Built-in profiles — First Install 2.8
 
 Profiles replace your current selection. They do not install apps immediately. You can add or remove apps before choosing Review & install. Existing imported profiles remain compatible.
 
